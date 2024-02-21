@@ -2,7 +2,6 @@ const allBtn = document.getElementsByClassName('seat');
 for (const btn of allBtn) {
   btn.addEventListener('click', function (event) {
     const seatName = event.target.parentNode.childNodes[1].innerText;
-
     const seatPrice = 500;
 
     const seatAddedTo = getConvertedValue('seat-added');
@@ -19,7 +18,6 @@ for (const btn of allBtn) {
 
     const appendContainer = document.getElementById('append-container');
     event.target.setAttribute('disabled', false);
-    event.target.style.backgroundColor = 'gray';
 
     const div = document.createElement('div');
     div.classList.add('flex');
